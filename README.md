@@ -5,6 +5,10 @@ Here you will find all the exercises that have been completed for the subject [B
 - Introduction to the backEnd I subject 
    - [Class 1](https://github.com/Pavelezl/Backend-CodingExercises/files/10147380/Clase.1.Ejercicio.con.el.profe.1.1.pdf): Make a list of people, add them to a group and proceed with the necessary methods. 
    - [Class 2](https://github.com/Pavelezl/Backend-CodingExercises/files/10147380/Clase.1.Ejercicio.con.el.profe.1.1.pdf): Continuing with the previous exercise, let's add some tests to test our code. We create a class for test, add the tests and test them until the result is positive. We use Unit Testing with JUnit. 
+   
+- Design Patterns In Java: Template Method Pattern, Chain-of-responsibility Pattern, Proxy Pattern, Flyweight Pattern, Facade Pattern.
+   - Template Method Pattern
+      - [Class 3]( ): Co
 
 
 # Classwork
