@@ -2,8 +2,8 @@
 Here you will find all the exercises that have been completed for the subject [BackEnd I]( ) under the Certified Tech Developer Program of Digital House.
 
 # Classes
-- Unit Testing with JUnit
-   - [Class 1]( ): Set up groups of people and applying the necessary tests.
+- Introduction to the back end subject 
+   - [Class 1]( ): Make a list of people, add them to a group and proceed with the necessary methods. 
 
 # Classwork
 - Unit Testing with JUnit
