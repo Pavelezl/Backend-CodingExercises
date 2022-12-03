@@ -9,4 +9,5 @@ Here you will find all the exercises that have been completed for the subject [B
 
 # Classwork
 - Unit Testing with JUnit
-   - [Classwork 1]( ): Calculating the area of a geometric figure and applying the necessary tests.
+   - [Classwork 1](https://github.com/Pavelezl/Backend-CodingExercises/files/10147391/Clas_1_Ejercicio_para_mesa_de_trabajo.pdf): Calculating the area of a geometric figure and applying the necessary tests.
+
