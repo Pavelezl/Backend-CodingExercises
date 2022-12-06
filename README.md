@@ -7,7 +7,10 @@ Here you will find all the exercises that have been completed for the subject [B
    - [Class 2](https://github.com/Pavelezl/Backend-CodingExercises/files/10147380/Clase.1.Ejercicio.con.el.profe.1.1.pdf): Continuing with the previous exercise, let's add some tests to test our code. We create a class for test, add the tests and test them until the result is positive. We use Unit Testing with JUnit. 
    
 - Design Patterns In Java: 
-   - [Class 3](https://github.com/Pavelezl/Backend-CodingExercises/files/10148738/Ejercicio_Profesor_Clase_2.docx.1.pdf): Template Method Pattern: 
+   - [Class 3](https://github.com/Pavelezl/Backend-CodingExercises/files/10148738/Ejercicio_Profesor_Clase_2.docx.1.pdf): Template Method Pattern:
+
+- Logging with Log4J: 
+   - [Class 10](https://github.com/Pavelezl/Backend-CodingExercises/files/10170873/Ejercicio.con.el.profesor.pdf): We were asked to create an application that calculates the average, maximum and minimum values in a list of integers. Then, we must create a main class, where we create a list for each of the items and check that the logs exist.
 
 
 # Classwork
@@ -17,8 +20,6 @@ Here you will find all the exercises that have been completed for the subject [B
 - Design Patterns In Java: 
    - [Class 3](https://github.com/Pavelezl/Backend-CodingExercises/files/10148738/Ejercicio_Profesor_Clase_2.docx.1.pdf): Template Method Pattern: 
    
-- Logging with Log4J: 
-   - [Class 10](https://github.com/Pavelezl/Backend-CodingExercises/files/10170873/Ejercicio.con.el.profesor.pdf): We were asked to create an application that calculates the average, maximum and minimum values in a list of integers. Then, we must create a main class, where we create a list for each of the items and check that the logs exist.
 
 
 
