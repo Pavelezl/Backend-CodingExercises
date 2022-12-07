@@ -25,7 +25,11 @@ Here you will find all the exercises that have been completed for the subject [B
    
 - Logging with Log4J: 
    - [Class 10](https://github.com/Pavelezl/Backend-CodingExercises/files/10170873/Ejercicio.con.el.profesor.pdf): Continuing with the previous exercise done in class 10. We were asked to create an application that calculates the average, maximum and minimum values in a list of integers. Then, we must create a main class, where we create a list for each of the items and check that the logs exist.
+
+- Database access, JDBC ,H2 Database: 
+   - [Class 10](https://github.com/Pavelezl/Backend-CodingExercises/files/10180564/Class.11.-.2.pdf): We were asked to individually create a figure table where the types of figures are stored.
    
+
 
 
 # ??????
