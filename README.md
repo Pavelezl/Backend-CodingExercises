@@ -28,11 +28,4 @@ Here you will find all the exercises that have been completed for the subject [B
 
 - Database access, JDBC ,H2 Database: 
    - [Class 11](https://github.com/Pavelezl/Backend-CodingExercises/files/10180564/Class.11.-.2.pdf): We were asked to individually create a figure table where the types of figures are stored.
-   
-
-
-
-# ??????
-Appointment booking system for a dental clinic. 
-[Project done for the Backend I subject, part of the Certified Tech Developer course taken at Digital House.](https://github.com/florencialecha/sessionsBookingSystem/files/9933116/Trabajo.Integrador.Back.End.I.docx.pdf)
 
