@@ -1,0 +1,34 @@
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 6
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 7
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 8
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 9
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 10
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 11
+[2022-12-06 18:15:22] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 11
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 12
+[2022-12-06 18:15:22] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 12
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 13
+[2022-12-06 18:15:22] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 13
+[2022-12-06 18:15:22] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 14
+[2022-12-06 18:15:22] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 14
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 6
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 7
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 8
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 9
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 10
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 11
+[2022-12-06 18:35:08] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 11
+[2022-12-06 18:35:08] [ INFO ] [App:21] La lista tiene más de 5 elementos, en total tiene: 12
+[2022-12-06 18:35:08] [ INFO ] [App:26] La lista tiene más de 10 elementos, en total tiene: 12
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 6.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 7.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 8.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 9.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 10.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 11.
+[2022-12-06 19:42:00] [ INFO ] [App:21] La longitud de la lista es mayor a 10, en total tiene 11.
+[2022-12-06 19:42:00] [ INFO ] [App:18] La longitud de la lista es mayor a 5, en total tiene 12.
+[2022-12-06 19:42:00] [ INFO ] [App:21] La longitud de la lista es mayor a 10, en total tiene 12.
+[2022-12-06 19:42:00] [ INFO ] [App:34] El promedio es 8.416666666666666.
+[2022-12-06 19:42:00] [ INFO ] [App:44] El mínimo es 1.
+[2022-12-06 19:42:00] [ INFO ] [App:54] El maximo es 77.
