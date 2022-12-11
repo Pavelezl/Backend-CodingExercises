@@ -1,7 +1,8 @@
 package com.example.projecto_integrador.service;
 
-import com.dh.clase23.model.Paciente;
-import com.dh.clase23.repository.PacienteRepository;
+
+import com.example.projecto_integrador.model.Paciente;
+import com.example.projecto_integrador.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

@@ -50,5 +50,5 @@ public class PacienteController {
         throw new ResourceNotFoundException("No se encontro ningun paciente con el id de: = " + id);
     }
 
-    
+
 }
