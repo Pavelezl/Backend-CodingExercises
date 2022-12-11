@@ -3,12 +3,12 @@ package com.example.projecto_integrador.service;
 import com.example.projecto_integrador.exception.ResourceNotFoundException;
 import com.example.projecto_integrador.model.Odontologo;
 import com.example.projecto_integrador.repository.OdontologoRepository;
-import org.apache.el.stream.Optional;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class OdontologoService {
@@ -37,7 +37,7 @@ public class OdontologoService {
     public void eliminarOdontologo(Long id) throws ResourceNotFoundException {
         //el se va a encargar de emitir la exception
         Optional<Odontologo> odontologoAEliminar=buscarOdontologoXId(id);
-        if (odontologoAEliminar.ifPresent()){
+        if (odontologoAEliminar.isPresent()){
             odontologoRepository.deleteById(id);
             LOGGER.warn("Se realizo una operación de eliminación del odontologo con" +
                     "id="+id);

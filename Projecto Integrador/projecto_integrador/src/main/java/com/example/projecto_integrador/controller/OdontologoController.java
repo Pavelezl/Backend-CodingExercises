@@ -3,12 +3,12 @@ package com.example.projecto_integrador.controller;
 import com.example.projecto_integrador.exception.ResourceNotFoundException;
 import com.example.projecto_integrador.model.Odontologo;
 import com.example.projecto_integrador.service.OdontologoService;
-import org.apache.el.stream.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/odontologos")

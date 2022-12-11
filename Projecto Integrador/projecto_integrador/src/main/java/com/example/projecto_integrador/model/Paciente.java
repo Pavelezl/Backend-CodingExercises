@@ -22,6 +22,9 @@ public class Paciente {
     @Column
     private String email;
 
+    public Paciente() {
+    }
+
     public Paciente(Long id, String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.id = id;
         this.nombre = nombre;
