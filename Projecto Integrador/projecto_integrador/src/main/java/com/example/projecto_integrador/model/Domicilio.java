@@ -1,14 +1,27 @@
-package model;
+package com.example.projecto_integrador.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "DOMICILIOS")
 public class Domicilio {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String calle;
+    @Column
     private Integer numero;
+    @Column
     private String localidad;
+    @Column
     private String provincia;
 
-    public Domicilio(Integer id, String calle, Integer numero, String localidad, String provincia) {
+    public Domicilio() {
+    }
+
+    public Domicilio(Long id, String calle, Integer numero, String localidad, String provincia) {
         this.id = id;
         this.calle = calle;
         this.numero = numero;
@@ -23,11 +36,11 @@ public class Domicilio {
         this.provincia = provincia;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

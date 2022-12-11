@@ -1,38 +1,51 @@
-package model;
+package com.example.projecto_integrador.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 public class Paciente {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String nombre;
+    @Column
     private String apellido;
+    @Column
     private String dni;
+    @Column
     private LocalDate fechaIngreso;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "domicilio_id" ,referencedColumnName = "id")
     private Domicilio domicilio;
+    @Column
+    private String email;
 
-    public Paciente(Integer id, String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio) {
+    public Paciente(Long id, String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
+        this.email = email;
     }
 
-    public Paciente(String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio) {
+    public Paciente(String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
+        this.email = email;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -74,5 +87,13 @@ public class Paciente {
 
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
