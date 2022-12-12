@@ -18,3 +18,11 @@
 [2022-12-11 22:51:31] [ INFO ] [OdontologoService:48] Se inició una operación de búsqueda del odontologo con id=1
 [2022-12-11 22:51:31] [ WARN ] [OdontologoService:38] Se realizo una operación de eliminación del odontologo conid=1
 [2022-12-11 22:51:31] [ INFO ] [OdontologoService:48] Se inició una operación de búsqueda del odontologo con id=1
+[2022-12-11 23:44:00] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-11 23:52:14] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-12 00:04:58] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-12 00:05:32] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-12 00:23:38] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-12 00:23:39] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Messi
+[2022-12-12 00:41:35] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Velez
+[2022-12-12 00:41:36] [ INFO ] [OdontologoService:25] Se inició una operación de guardado del odontologo con apellido: Messi
