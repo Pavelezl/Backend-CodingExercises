@@ -12,13 +12,10 @@ import java.util.Optional;
 
 @Service
 public class OdontologoService {
-
+    @Autowired
     private OdontologoRepository odontologoRepository;
     private static final Logger LOGGER=Logger.getLogger(OdontologoService.class);
-    @Autowired
-    public OdontologoService(OdontologoRepository odontologoRepository) {
-        this.odontologoRepository = odontologoRepository;
-    }
+
 
     public List<Odontologo> listarOdontologos(){
         LOGGER.info("Se inició una operación de listado de odontologos");

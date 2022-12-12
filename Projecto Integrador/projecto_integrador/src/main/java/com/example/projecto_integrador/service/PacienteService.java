@@ -4,16 +4,15 @@ package com.example.projecto_integrador.service;
 import com.example.projecto_integrador.model.Paciente;
 import com.example.projecto_integrador.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PacienteService {
-    private PacienteRepository pacienteRepository;
     @Autowired
-    public PacienteService(PacienteRepository pacienteRepository) {
-        this.pacienteRepository = pacienteRepository;
-    }
+    private PacienteRepository pacienteRepository;
 
     public Paciente guardarPaciente(Paciente paciente){
         return pacienteRepository.save(paciente);

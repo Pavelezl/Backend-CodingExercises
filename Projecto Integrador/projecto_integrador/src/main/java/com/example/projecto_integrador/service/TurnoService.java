@@ -16,12 +16,8 @@ import java.util.Optional;
 
 @Service
 public class TurnoService {
-
-    private TurnoRepository turnoRepository;
     @Autowired
-    public TurnoService(TurnoRepository turnoRepository) {
-        this.turnoRepository = turnoRepository;
-    }
+    private TurnoRepository turnoRepository;
 
     public TurnoDTO guardarTurno (TurnoDTO turno){
         Turno turnoAGuardar=turnoDTOaTurno(turno);

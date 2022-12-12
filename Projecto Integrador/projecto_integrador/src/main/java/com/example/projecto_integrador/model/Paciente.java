@@ -1,8 +1,15 @@
 package com.example.projecto_integrador.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
 
+@Entity
+@Table(name = "PACIENTES")
 public class Paciente {
 
     @Id
@@ -21,6 +28,10 @@ public class Paciente {
     private Domicilio domicilio;
     @Column
     private String email;
+
+    @OneToMany(mappedBy = "paciente", cascade = CascadeType.ALL)
+    @JsonIgnore
+    private Set<Turno> turno = new HashSet<>();
 
     public Paciente() {
     }

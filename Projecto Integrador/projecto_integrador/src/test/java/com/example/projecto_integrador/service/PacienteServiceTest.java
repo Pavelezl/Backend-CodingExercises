@@ -24,7 +24,7 @@ class PacienteServiceTest {
     @Test
     @Order(1)
     public void guardarPacienteTest(){
-        Paciente pacienteAGuardar= new Paciente("Rodolfo","Baspineiro"
+        Paciente pacienteAGuardar= new Paciente("Pablo","Velez"
         ,"5161", LocalDate.of(2022,11,28),
                 new Domicilio("Carrera",14,"Chapinero","Cundinamarca"),"lopera@gmail.com");
         Paciente pacienteGuardado=pacienteService.guardarPaciente(pacienteAGuardar);
@@ -53,7 +53,7 @@ class PacienteServiceTest {
                 new Domicilio(1L,"Calle",548,"carrera 14","patio bonito"),"Anotnio@gmail.com");
         pacienteService.actualizarPaciente(pacienteAActualizar);
         Optional<Paciente> pacienteActualizado= pacienteService.buscarPaciente(pacienteAActualizar.getId());
-        assertEquals("Ezequiel",pacienteActualizado.get().getNombre());
+        assertEquals("Antonio",pacienteActualizado.get().getNombre());
     }
     @Test
     @Order(5)

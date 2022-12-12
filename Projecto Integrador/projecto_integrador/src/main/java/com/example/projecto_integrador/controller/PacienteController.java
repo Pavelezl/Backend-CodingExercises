@@ -14,11 +14,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/paciente")
 public class PacienteController {
-    private PacienteService pacienteService;
     @Autowired
-    public PacienteController(PacienteService pacienteService) {
-        this.pacienteService = pacienteService;
-    }
+    private PacienteService pacienteService;
 
     @PostMapping
     public ResponseEntity<Paciente> registrarNuevoPaciente (@RequestBody Paciente paciente) {
