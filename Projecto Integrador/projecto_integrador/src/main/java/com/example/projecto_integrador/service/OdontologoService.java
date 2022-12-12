@@ -18,7 +18,7 @@ public class OdontologoService {
 
 
     public List<Odontologo> listarOdontologos(){
-        LOGGER.info("Se inició una operación de listado de odontologos");
+        LOGGER.info("Se inició el listado de odontologos");
         return odontologoRepository.findAll();
     }
     public Odontologo guardarOdontologo(Odontologo odontologo){
@@ -32,7 +32,6 @@ public class OdontologoService {
         odontologoRepository.save(odontologo);
     }
     public void eliminarOdontologo(Long id) throws ResourceNotFoundException {
-        //el se va a encargar de emitir la exception
         Optional<Odontologo> odontologoAEliminar=buscarOdontologoXId(id);
         if (odontologoAEliminar.isPresent()){
             odontologoRepository.deleteById(id);

@@ -13,12 +13,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/odontologos")
 public class OdontologoController {
+    @Autowired
     private OdontologoService odontologoService;
 
-    @Autowired
-    public OdontologoController(OdontologoService odontologoService) {
-        this.odontologoService = odontologoService;
-    }
 
     @GetMapping("/{id}")
     public ResponseEntity<Odontologo> buscarOdontologoPorID(@PathVariable Long id){
