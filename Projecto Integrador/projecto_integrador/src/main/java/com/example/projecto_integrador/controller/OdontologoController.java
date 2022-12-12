@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/odontologos")
+@RequestMapping("/odontologo")
 public class OdontologoController {
     @Autowired
     private OdontologoService odontologoService;
@@ -37,7 +37,7 @@ public class OdontologoController {
     public ResponseEntity<Odontologo> registrarOdontologo(@RequestBody Odontologo odontologo){
         return ResponseEntity.ok(odontologoService.guardarOdontologo(odontologo));
     }
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id) throws ResourceNotFoundException {
         odontologoService.eliminarOdontologo(id);
         return ResponseEntity.ok("Se eliminó al odontologo con id= "+id);

@@ -1,17 +1,22 @@
 window.addEventListener('load', function () {
 
-    const formulario = document.querySelector('#add_new_odontologo');
+    const formulario = document.querySelector('#add_new_turno');
+
 
     formulario.addEventListener('submit', function (event) {
     event.preventDefault()
 
         const formData = {
-            matricula: document.querySelector('#matricula').value,
-            nombre: document.querySelector('#nombre').value,
-            apellido: document.querySelector('#apellido').value,
+            pacienteId : document.querySelector('#id_paciente').value,
+
+            odontologoId : document.querySelector('#id_odontologo').value,
+
+            fecha: document.querySelector('#fechaturno').value,
 
         };
-        const url = '/odontologo';
+        console.log(formData);
+
+        const url = '/turno';
         const settings = {
             method: 'POST',
             headers: {
@@ -26,7 +31,7 @@ window.addEventListener('load', function () {
 
                  let successAlert = '<div class="alert alert-success alert-dismissible">' +
                      '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
-                     '<strong></strong> Odontologo agregado. </div>'
+                     '<strong></strong> Turno agregado. </div>'
 
                  document.querySelector('#response').innerHTML = successAlert;
                  document.querySelector('#response').style.display = "block";
@@ -47,9 +52,9 @@ window.addEventListener('load', function () {
 
 
     function resetUploadForm(){
-        document.querySelector('#matricula').value = "";
-        document.querySelector('#nombre').value = "";
-         document.querySelector('#apellido').value = "";
+        document.querySelector('#id_paciente').value = "";
+        document.querySelector('#id_odontologo').value = "";
+         document.querySelector('#fechaturno').value = "";
 
     }
 
@@ -57,7 +62,7 @@ window.addEventListener('load', function () {
         let pathname = window.location.pathname;
         if(pathname === "/"){
             document.querySelector(".nav .nav-item a:first").addClass("active");
-        } else if (pathname == "/lista_odontologo.html") {
+        } else if (pathname == "/get_turno.html") {
             document.querySelector(".nav .nav-item a:last").addClass("active");
         }
     })();

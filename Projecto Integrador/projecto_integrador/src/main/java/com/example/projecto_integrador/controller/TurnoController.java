@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/turnos")
+@RequestMapping("/turno")
 public class TurnoController {
 
     private TurnoService turnoService;
@@ -94,7 +94,7 @@ public class TurnoController {
                     " que no exista en la base de datos.");
         }
     }
-    @DeleteMapping("/eliminar/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminarTurno(@PathVariable Long id){
         if (turnoService.buscarTurno(id).isPresent()){
             turnoService.eliminarTurno(id);

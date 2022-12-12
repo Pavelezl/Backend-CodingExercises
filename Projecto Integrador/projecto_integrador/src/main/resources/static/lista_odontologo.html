@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Dentists</title>
+    <title>Odontologos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">Dentist Clinic</a>
+        <a class="navbar-brand" href="/index.html">Clinica Odontologica</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,29 +23,29 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dentists Management
+                        Gestión Odontologos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/post_dentist.html">Register</a></li>
-                        <li><a class="dropdown-item" href="/list_dentist.html">See dentists</a></li>
+                        <li><a class="dropdown-item" href="/post_odontologo.html">Registrar</a></li>
+                        <li><a class="dropdown-item" href="/lista_odontologo.html">Ver odontologos</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Patients Management
+                        Gestión Pacientes
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/post_patient.html">Register</a></li>
-                        <li><a class="dropdown-item" href="/get_patient.html">List</a></li>
+                        <li><a class="dropdown-item" href="/post_paciente.html">Registrar</a></li>
+                        <li><a class="dropdown-item" href="/lista_paciente.html">Listar</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Appointments
+                        Turnos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/post_appointment.html">Register</a></li>
-                        <li><a class="dropdown-item" href="/get_appointments.html">List</a></li>
+                        <li><a class="dropdown-item" href="/post_turno.html">Registrar</a></li>
+                        <li><a class="dropdown-item" href="/lista_turno.html">Listar</a></li>
                     </ul>
                 </li>
             </ul>
@@ -56,19 +55,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <div class="container">
 
-    <div id="div_dentist_table">
-        <h1>Dentists</h1>
+    <div id="div_odontologo_table">
+        <h1>Odontologos</h1>
         <div class="row col-md-6 table-responsive">
-            <table id="dentistTable" class="table table-striped">
+            <table id="odontologoTable" class="table table-striped">
                 <thead>
                 <tr>
-                    <th>License</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Matricula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
                     <th></th>
                 </tr>
                 </thead>
-                <tbody id="dentistTableBody">
+                <tbody id="odontologoTableBody">
 
                 </tbody>
             </table>
@@ -77,18 +77,22 @@
     <div class="row">
         <div class="col-sm-6" style="display: none;
 											background-color:#e6fffa; padding:10px; border-radius:3px"
-             id="div_dentist_updating">
-            <form id="update_dentist_form">
+             id="div_odontologo_updating">
+            <form id="edit_odontologo">
                 <div class="form-group">
-                    <label >License:</label>
-                    <input type="text" class="form-control" id="dentist_id" readonly>
+                    <label>ID:</label>
+                    <input type="text" class="form-control" id="odontologo_id" readonly>
                 </div>
                 <div class="form-group">
-                    <label >First Name:</label>
+                    <label>Matricula:</label>
+                    <input type="text" class="form-control" placeholder="matricula" id="matricula">
+                </div>
+                <div class="form-group">
+                    <label>Nombre:</label>
                     <input type="text" class="form-control" placeholder="First Name" id="nombre">
                 </div>
                 <div class="form-group">
-                    <label >Last Name:</label>
+                    <label>Apellido:</label>
                     <input type="text" class="form-control" placeholder="Last Name" id="apellido">
                 </div>
 
@@ -100,7 +104,8 @@
     </div>
     <hr>
 </div>
-<script type="text/javascript" src="/js/get_dentist.js"></script>
-<script type="text/javascript" src="/js/delete_dentist.js"></script>
+<script type="text/javascript" src="/js/get_odontologo.js"></script>
+<script type="text/javascript" src="/js/update_odontologo.js"></script>
+<script type="text/javascript" src="/js/delete_odontologo.js"></script>
 </body>
 </html>
