@@ -6,6 +6,7 @@ import com.example.projecto_integrador.exception.ResourceNotFoundException;
 import com.example.projecto_integrador.model.Domicilio;
 import com.example.projecto_integrador.model.Odontologo;
 import com.example.projecto_integrador.model.Paciente;
+import com.example.projecto_integrador.model.Turno;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -99,6 +100,8 @@ class TurnoServiceTest {
 //
 //        assertTrue(throwm.getMessage().contains("No se hallo ningun turno con el id= " + idAEliminar));
 //    }
+
+
 
 
 }
