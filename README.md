@@ -28,4 +28,6 @@ Here you will find all the exercises that have been completed for the subject [B
 
 - Database access, JDBC ,H2 Database: 
    - [Class 11](https://github.com/Pavelezl/Backend-CodingExercises/files/10180564/Class.11.-.2.pdf): We were asked to individually create a figure table where the types of figures are stored.
+   
+# Proyecto integrador
 
