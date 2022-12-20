@@ -30,5 +30,5 @@ Here you will find all the exercises that have been completed for the subject [B
    - [Class 11](https://github.com/Pavelezl/Backend-CodingExercises/files/10180564/Class.11.-.2.pdf): We were asked to individually create a figure table where the types of figures are stored
    
 # Proyecto integrador
-Appointment booking system for a dental clinic. Project done for the subject [BackEnd I]( ) under the Certified Tech Developer Program of Digital House
+Appointment booking system for a dental clinic. 
 
